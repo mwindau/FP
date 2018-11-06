@@ -1,0 +1,193 @@
+\input{header.tex}
+
+\begin{document}
+
+  \section{Zielsetzung}
+
+    In dem Versuch soll die Lebensdauer von kosmischen Myonen bestimmt werden.
+
+
+  \section{Theorie}
+
+    \subsection{Myonen}
+
+    Myonen sind Elementarteilchen und gehören zur Familie der Leptonen.
+    Auf sie wirken die schwache und die elektromagnetische Wechselwirkung.
+    Ihre Masse beträgt in etwa das 200-fache der Elektronenmasse.
+    Wenn Pionen, die erzeugt werden, wenn energiereiche kosmische Protonen
+    mit Luftmolekülen in Wechselwirkung treten, zerfallen, entstehen Myonen.
+    Beim Zerfall von einem $\pi^-$ entsteht ein Myon und beim Zerfall von
+    einem $\pi^+$ ein Antimyon. Die Zerfallsgleichungen lauten
+    \begin{align*}
+      &\pi^+ \to \mu^+ +\nu_{\mu}\\
+      &\pi^- \to \mu^- +\bar{\nu}_{\mu}\,\,\,\,.
+    \end{align*}
+    Von diesen Myonen gelangen einige, die nahezu Lichtgeschwindigkeit
+    besitzen, zur Erde. Ihre kinetische Energie kann bei mehreren Hundert MeV
+    liegen. \\
+    Myonen zerfallen in Elektronen bzw. Positronen und Neutrinos gemäß den Gleichungen
+    \begin{align*}
+      &\mu^- \to e^- +\bar{\nu}_e+\nu_{\mu}\\
+      &\mu^+ \to e^+ +\nu_e +\bar{\nu}_{\mu}\,\,\,\,.
+    \end{align*}
+    Die Lebensdauer von Myonen beträgt in etwa $2,2\,\mu$s.
+
+    \subsection{Lebensdauer eines instabilen Teilchens}
+
+    Wenn die Lebensdauer eines einzelnen Teilchens gemessen wird,
+    kann aus dem Ergebnis kein Rückschluss auf die Lebensdauer
+    anderer Teilchen gezogen werden, weil die individuellen Lebensdauern
+    statistisch verteilt sind. \\
+    Die Lebensdauer $\tau$ einer Teilchenart beschreibt die Zeit, nach welcher
+    die ursprüngliche Teilchenmenge $N_0$ auf den Wert $\frac{N_0}e$ reduziert
+    wurde. Ihr Kehrwert ist die Zerfallskonstante $\lambda.$\\
+    Die Wahrscheinlichkeit für den Zerfall eines Teilchens im Intervall $dt$ ist
+    $dW=\lambda\,dt.$\\
+    Wird die Teilchenzahl mit einbezogen, entsteht die Gleichung
+    \begin{align*}
+      \frac{dN}{dt}=-\lambda N.
+    \end{align*}
+    Daraus lässt sich eine genäherte Formel für die zeitliche Entwicklung der
+    Teilchenzahl herleiten:
+    \begin{align*}
+      N(t)=N_0\symup{e}^{-\lambda t}=N_0\symup{e}^{-t/\tau}.
+    \end{align*}
+    Um aus einer Stichprobe von $n$ Lebensdauern $\tau$ zu bestimmen,
+    ist es sinnvoll, die Methode der kleinsten Quadrate anzuwenden.
+    Dabei wird der Ausdruck
+    \begin{align*}
+      \sum_{j=1}^n \left(N(t_j)-N_0\,\symup{e}^{-\lambda t}\right)²
+    \end{align*}
+    minimalisiert, indem $N_0$ und $\lambda$ verändert werden.
+    Die Zeit $t_j$ wurde in der Stichprobe $N(t_j)$ mal gemessen.
+
+
+
+  \section{Aufbau}
+
+    \begin{figure}[H]
+      \centering
+      \includegraphics[height=10cm]{myonaufbau.png}
+      \caption{Schaltung zur Lebensdauermessung kosmischer Myonen.}
+      \label{fig:schaltung}
+    \end{figure}
+
+
+    In Abbildung \ref{fig:schaltung} ist eine Schaltung zu sehen,
+    mit welcher die Lebensdauer kosmischer Myonen bestimmt werden kann.
+    Dabei ist zu berücksichtigen, dass auf der rechten Seite
+    zwischen SEV und Diskriminator ebenfalls eine Verzögerung eingebaut ist.\\
+    \ \\
+    Ein wesentlicher Baustein der Schaltung ist der \textbf{Szintillationsdetektor}.
+    Dies ist ein 50\,l umfassender Edelstahltank gefüllt mit Tuolol,
+    in dem Lichtimpulse nach etwa 10\,ns abklingen.
+    Ein eintreffendes Myon regt durch seine hohe kinetische Energie von
+    teilweise mehr als 100\,MeV die Moleküle im Szintillator an, welche
+    beim Zurückfallen in den Ursprungszustand Lichtquanten emittieren.
+    Wenn ein Myon im Szintillator zerfällt, entsteht ein Elektron oder ein
+    Positron, welches ebenfalls genug Energie besitzt, um die Szintillatormoleküle
+    entsprechend anzuregen. \\
+    Die \textbf{Sekundärelektronenvervielfacher} (kurz SEV) mit eingebauten
+    \textbf{Photokathoden} an beiden Enden des Szintillators bewirken,
+    dass die eintreffenden Lichtimpulse in elektrische Signale umgewandelt
+    werden.\\
+    Um die leicht unterschiedlichen Eigenschaften der beiden SEV ausgleichen
+    zu können, wird nach jedem SEV eine Verzögerung (also ein manuell einstellbarer
+    Widerstand) eingebaut. \\
+    Nach jedem Widerstand folgt ein \textbf{Diskriminator}. An diesem können zwei
+    Dinge eingestellt werden. Zunächst einmal kann die Mindestspannungshöhe
+    eingestellt werden, die ein Impuls haben muss, um vom Diskriminator
+    durchgelassen zu werden. Dies sorgt für eine erste Herausfilterung
+    ungewünschter Spannungsimpulse, welche durch eine spontane Elektronenemission
+    einer der Photokathoden entstehen können, da einigie von ihnen viel kleiner
+    sind als die Myonenimpulse. Außerdem kann am Diskriminator
+    eingestellt werden, wie lang das Plateau des Rechteckimpulses sein
+    soll, welcher erstellt wird, wenn ein Lichtimpuls am SEV in einen elektrischen
+    Impuls umgewandelt wird.\\
+    Die nachfolgende \textbf{Koinzidenzschaltung} dient dazu, einen noch größeren Teil
+    der unerwünschten Elektronenimpulse herauszufiltern. Die zugrundeliegende
+    Annahme ist, dass ein durch spontane Elektronenemission erzeugter Impuls
+    nur an einem SEV einen Spannungsimpuls auslöst, ein durch ein Myon erzeugter
+    Lichtblitz aber in einer sehr kleinen Zeit bei beiden SEV zu einer Reaktion
+    führt. Die Koinzidenzschaltung lässt folglich nur
+    "gleichzeitige" Ereignisse passieren.
+    Jeder am SEV ankommende Lichtimpuls erzeugt eine Rechteckspannung.
+    Findet ein Lichtblitz ganz nah bei einem der SEV statt, beginnt
+    also das Spannungssignal. Es sollte nach Möglichkeit so lange
+    andauern, dass es noch etwas überlappt mit dem Spannungssignal des anderen
+    SEV, was erst beginnt, wenn das Licht sich zur anderen
+    Seite des Tanks ausgebreitet hat.
+    Die Koinzidenzschaltung erkennt also letztendlich die Ereignisse
+    als gleichzeitig an, die zu sich überlappenden Rechtecksspannungssignalen
+    der beiden SEV führen.\\
+    Nachdem nun annähernd gewährleistet ist, dass nach der Koinzidenzschaltung
+    nur noch verwertbare Signale vorliegen, muss ein Mechanismus eingesetzt
+    werden, der dazu führt, dass das Signal des eintreffenden Myons die
+    Lebensdauermessung startet, und dass der Zerfall die Messung beendet. \\
+    Dazu wird das aus der Koinzidenzschaltung kommende Signal an einen Eingang
+    des 1.AND-Gatters und ein einen Eingang des 2.AND-Gatters weitergeleitet.
+    Der zweite Ausgang der \textbf{AND-Gatter} ist mit einer
+    \textbf{monostabilen
+    Kippstufe} verbunden.
+    AND-Gatter lassen ein Signal nur passieren, wenn auf ihre beiden
+    Eingänge das Signal HIGH gegeben wird. Dies ist der Fall, wenn ein Spannungsimpuls
+    ankommt.
+    In die Kippstufe fließt ebenfalls das Signal aus der Koinzidenzschaltung, allerdings
+    ist ein Widerstand eingebaut, sodass das Signal im Vergleich zu den AND-Gattern
+    erst etwa 30\,ns später ankommt.\\
+    Im Grundzustand ist die Kippstufe so eingestellt, dass sie auf den Eingang
+    des 1.AND-Gatters ein HIGH gibt, auf den des 2. ein LOW.
+    Kommt jetzt ein Startimpuls durch ein Myon hinter der Koinzidenzschaltung
+    an, fließt er in beide AND-Gatter und sorgt für ein HIGH auf dem ersten
+    Eingang. Beim 1.AND-Gatter liegt durch die Kippstufe auf dem zweiten
+    Eingang ebenfalls ein HIGH, sodass der Impuls hindurchgeht und
+    als Startimpuls gezählt wird.
+    Bei 2.AND-Gatter liegt durch die Kippstufe am zweiten Eingang ein LOW an,
+    weshalb der Strom nicht passieren kann.\\
+    Nach 30\,ns, wenn der Strom an den ersten Eingängen der AND-Gatter
+    schon wieder weg ist, erreicht das Signal aus der Koinzidenzschaltung
+    die monostabile Kippstufe und führt dazu, dass diese sich umkehrt.
+    Sie gibt nun also ein LOW auf den zweiten Eingang des 1.AND-Gatters und ein
+    HIGH auf den zweiten Eingang des 2.AND-Gatters. \\
+    Kommt nun durch die Koinzidenzschaltung ein Signal durch den Myonenzerfall,
+    wird es wieder zu den beiden AND-Gattern geleitet. Allerdings kann es
+    diesmal aufgrund der Änderung der Situation durch die Kippstufe
+    nur das zweite AND-Gatter passieren und somit als Stop-Impuls gezählt werden.\\
+    Natürlich führt der Stop-Impuls nach 30\,ns Verzögerung wieder dazu, dass
+    die Kippstufe wieder zurückkippt, sodass ein neuer Startimpuls auch
+    als solcher erkannt wird.\\
+    Start- und Stop-Impulse werden beide vom \textbf{Zeit-Amplituden-Converter}
+    (kurz TAC) registriert. Dieser berechnet dann die Zeit zwischen Start-
+    und Stop-Impuls und wandelt die Länge der Zeit in ein dazu proportionales
+    Spannungssignal um. \\
+    Diese Spannungssignale werden ihrer Höhe entsprechend in einem Kanal
+    des \textbf{Vielkanalanalysators} gespeichert.\\
+    Ein angschlossener Rechner übernimmt die in der Theorie vorgestellen
+    Schritte und berechnet die Lebensdauer.\\
+    Da einige Myonen eine hohe Geschwindigkeit haben, und somit den
+    Szintillator wieder verlassen, ohne in ihm zu zerfallen, muss verhindert
+    werden, dass ein zweites einfallendes Myon als Stop-Impuls für
+    ein durchgeflogenes Myon gewertet wird. Dazu wird die Suchzeit $T_S$
+    eingeführt. In dieser Zeit läuft die Schaltung wie beschrieben. Trifft
+    allerdings in der Suchzeit kein Stop-Impuls ein, wird die Apparatur
+    zurückgesetzt und wartet auf einen neuen Startimpuls.
+    Die Suchzeit sollte so gewählt werden, dass es unwahrscheinlich ist,
+    dass in ihr 2 Myonen im Tank eintreffen.\\
+    Um die Startimpulse ohne zugehörige Stop-Impulse trotzdem registrieren zu
+    können, wird zwischen dem 1.AND-Gatter und dem Eingang des
+    TAC ein Impulszähler eingebaut.\\
+    Damit die vom TAC berechneten Werte überprüft werden können,
+    kann zwischen dem 2.AND-Gatter und dem TAC ebenfalls ein Impulszähler
+    eingebaut werden.\\
+    Der Doppelimpulsgenerator, welcher ebenfalls an die Koinzidenzschaltung
+    angeschlossen ist, hat für die eigentliche Registrierung von Myonen
+    keine Bewandnis. Er dient lediglich zur Kalibrierung (siehe Durchführung).
+
+  \section{Durchführung}
+
+
+
+
+
+
+\end{document}
