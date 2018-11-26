@@ -67,7 +67,7 @@ Es ergibt sich ein $N_{\symup{max}} = 232 \pm 4$.
 Als nächstes wird mithilfe des
 Maximalwerts die Halbwertsbreite, und damit die Breite des Plateaus, bestimmt.
 Dafür werden zunächst Regressionsgeraden durch die Flanken gelegt, um die Verzögerungszeiten
-zu erhalten bei denen die Signalanzahl auf $N_{\symup{max}}/2$ gesunken ist.
+zu erhalten, bei denen die Signalanzahl auf $N_{\symup{max}}/2$ gesunken ist.
 \begin{equation}
   N(T_{\symup{VZ}}) = \symup{a}\,\cdot\,T_{\symup{VZ}}\;+\;\symup{b}
   \label{eqn:flanke}
@@ -86,7 +86,7 @@ Setzt man $N(T_{\symup{VZ}})$ gleich $N_{\symup{max}}/2$, ergeben sich:
   T_{\symup{VZ,L}} &= (-3.8\;\pm\;0.4)\,\symup{ns}\\
   T_{\symup{VZ,R}} &= (19.9\;\pm\;2.1)\,\symup{ns}\\
 \end{align*}
-Und damit eine Breite des Plateaus von
+Damit ergibt sich eine Breite des Plateaus von
 \begin{equation*}
   T_{\symup{VZ,Gesamt}} = T_{\symup{VZ,L}}\;+\;T_{\symup{VZ,R}} = (23.7\;\pm\;2.1)\,\symup{ns}.
 \end{equation*}
@@ -94,20 +94,20 @@ Und damit eine Breite des Plateaus von
 \subsection{Kalibrierung des Vielkanalanalysators}
 \label{sec:vielkanalanalysator}
 
-Die Kalibrierung des Vielkanalanalysators wird dazu verwendet um eine Umrechnung der
+Die Kalibrierung des Vielkanalanalysators wird verwendet, um eine Umrechnung der
 Channels $c$ des Analysators auf Zeitabstände $t$ zu ermöglichen.
 \begin{equation}
   t(c) = \symup{a}\,\cdot\,c\;+\;\symup{b}
   \label{eqn:zeit}
 \end{equation}
-Dafür wird mittels Formel \ref{eqn:zeit}
-die vom Doppelimpulsgenerators gefüllten Channels in Verbindung mit dessen eingestellten
-Zeitabständen gebracht. Mit einer Regressionsgeraden durch die in Tabelle \ref{tab:zeit} aufgelisteten Messwerte wird a und b bestimmt:
+Dafür werden mittels Formel \ref{eqn:zeit}
+die vom Doppelimpulsgenerator gefüllten Channels in Verbindung mit den eingestellten
+Zeitabständen gebracht. Mit einer Regressionsgeraden durch die in Tabelle \ref{tab:zeit} aufgelisteten Messwerte werden a und b bestimmt:
 \begin{align*}
   \symup{a} &= (0.022348\;\pm\;0.000012)\,\symup{\mu s}\\
   \symup{b} &= (-0.033\;\pm\;0.003)\,\symup{\mu s}\\
 \end{align*}
-Dabei wurden die in Tabelle \ref{tab:zeit} mit einem Sternchen markierten Werte in der Regression
+Dabei werden die in Tabelle \ref{tab:zeit} mit einem Sternchen markierten Werte in der Regression
 nicht beachtet, da in dem Fall der Doppelimpulsgenerator für eine Zeit zwei Channels füllte.
 \begin{table}
   \centering
@@ -138,9 +138,9 @@ Die Messung lief $T_{\symup{Ges}}=158216$ Sekunden (= 43.95 Stunden), und hat in
 $N_{\symup{Start}}=5345056$ Startsignale, sowie $N_{\symup{Stopp}}=10995$ Stoppsignale registriert.
 
 \noindent
-Durchqueren zwei Myonen den Szintillator in einem zeitlichen Abstand der kleiner als die
+Durchqueren zwei Myonen den Szintillator in einem zeitlichen Abstand, der kleiner als die
 Suchzeit $T_{\symup{S}}=10\,\mu s$ ist, registriert die Messung ein fälschliches Stoppsignal.
-Um die Wahrscheinlichkeit für ein Ereigniss dieser Art zu bestimmen, wird zuerst die Rate R
+Um die Wahrscheinlichkeit für ein Ereigniss dieser Art zu bestimmen, wird zuerst die Rate $R$
 der einkommenden Myonen, sowie daraus die Anzahl $N_{\symup{S}}$ der während der Suchzeit ausgelösten Signale
 berechnet:
 \begin{align*}
@@ -155,14 +155,14 @@ Poissonverteilung ermittelt:
 W(1) ist damit die Wahrscheinlichkeit für ein weiteres Signal während der laufenden Suchzeit.
 
 Aus der Wahrscheinlichkeit lässt sich nun auf die Gesamtanzahl der so enstandenen
-Signale, sprich dem Untergrund U schließen. Da der Untergrund für jeden Channel gleich ist,
+Signale, sprich dem Untergrund U, schließen. Da der Untergrund für jeden Channel gleich ist,
 ergibt sich für den Untergrund pro Channel:
 \begin{align*}
   \symup{U_{C}} &= \symup{U}/511 = \symup{W(1)}\,\cdot\,N_{\symup{Start}}\,\cdot\,\frac{1}{511}\\
                 &= 4.592
 \end{align*}
 
-Im folgenden wird dieser Wert für den Untergrund, mit dem verglichen der sich aus der Regression
+Im folgenden wird dieser Wert für den Untergrund mit dem verglichen, der sich aus der Regression
 der Messdaten mit unbekanntem $\symup{U_{\symup{Fit}}}$ Parameter aus dem \textit{curve\_fit}-Paket von \textit{Python} ergibt. Zudem lässt sich aus den Regressionsparametern die Lebensdauer bestimmen.
 Dafür wird die Funktion \ref{eqn:fit} mit unbekanntem $N_{0}$, $\symup{\lambda}$ und $\symup{U_{Fit}}$ verwendet.
 \begin{equation}
@@ -184,5 +184,5 @@ Die Lebensdauer $\symup{\tau}$ ergibt sich aus dem Kehrwert der Zerfallskonstant
   \centering
   \includegraphics{myonen.pdf}
   \caption{Die Gemessenen Signale über die in Zeitabstände umgewandelten Channels, sowie die Regression.}
-  \label{fig:myonen}
+  \label{fig:fit}
 \end{figure}
