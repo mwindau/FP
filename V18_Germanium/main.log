@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.1.17)  26 NOV 2018 13:38
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.1.17)  26 NOV 2018 19:00
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.105 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 Babel <3.16> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/home/michael/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cl
@@ -2408,6 +2408,29 @@ File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 \BKM@id=\count442
 )) (/home/michael/.local/texlive/2017/texmf-dist/tex/latex/ncctools/extdash.sty
 Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
+)
+(/home/michael/.local/texlive/2017/texmf-dist/tex/latex/halloweenmath/halloween
+math.sty
+Package: halloweenmath 2017/04/25 v0.10a (development)
+
+(/home/michael/.local/texlive/2017/texmf-dist/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2016/02/05 v0.3b Improved picture commands (HjG,RN,JT)
+
+(/home/michael/.local/texlive/2017/texmf-dist/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: luatex.def on input line 119.
+Package pict2e Info: Driver file for pict2e: p2e-luatex.def on input line 121.
+
+(/home/michael/.local/texlive/2017/texmf-dist/tex/latex/pict2e/p2e-luatex.def
+File: p2e-luatex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks28
+\@arclen=\dimen262
+\@arcrad=\dimen263
+\@tempdimd=\dimen264
+)
+\@HwM@arrowfill@skip=\skip102
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
@@ -2478,16 +2501,16 @@ File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count443
-\scratchdimen=\dimen262
+\scratchdimen=\dimen265
 \scratchbox=\box57
 \nofMPsegments=\count444
 \nofMParguments=\count445
-\everyMPshowfont=\toks28
+\everyMPshowfont=\toks29
 \MPscratchCnt=\count446
-\MPscratchDim=\dimen263
+\MPscratchDim=\dimen266
 \MPnumerator=\count447
 \makeMPintoPDFobject=\count448
-\everyMPtoPDFconversion=\toks29
+\everyMPtoPDFconversion=\toks30
 )
 (/home/michael/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.
 sty
@@ -2718,14 +2741,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 41190 strings out of 494478
+ 41591 strings out of 494478
  100000,1648299 words of node,token memory allocated
  591 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 7 attribute, 76 glue_spec, 7 attrib
 ute_list, 1 write nodes
    avail lists: 1:1,2:496,3:112,4:36,5:263,6:3192,7:614,8:53,9:242,10:13,11:442
- 44072 multiletter control sequences out of 65536+600000
- 142 fonts using 51347115 bytes
+ 44445 multiletter control sequences out of 65536+600000
+ 142 fonts using 51347539 bytes
  61i,11n,104p,8833b,3048s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/michael/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/lati
 nmodern-math.otf></home/michael/.local/texlive/2017/texmf-dist/fonts/opentype/pu
@@ -2737,7 +2760,7 @@ al/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home
 ar.otf></home/michael/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lm
 sans10-bold.otf></home/michael/.local/texlive/2017/texmf-dist/fonts/opentype/pub
 lic/lm/lmroman12-bold.otf>
-Output written on main.pdf (10 pages, 225702 bytes).
+Output written on main.pdf (10 pages, 226252 bytes).
 
 PDF statistics: 196 PDF objects out of 1000 (max. 8388607)
  148 compressed objects within 2 object streams
