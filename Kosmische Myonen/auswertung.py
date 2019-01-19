@@ -1,10 +1,13 @@
 import numpy as np
 from scipy.stats import sem
 from uncertainties import ufloat
+import matplotlib
 import matplotlib.pyplot as plt
 import uncertainties.unumpy as unp
 import scipy.constants as const
 from scipy.optimize import curve_fit
+
+matplotlib.matplotlib_fname()
 
 #Verzögerungszeit:
 T_vz, n_vz_10 = np.genfromtxt('verzoegerung.txt', unpack=True)
@@ -101,11 +104,16 @@ print("W: ", W1)
 print("U: ",U1gesamt)
 print("U1: ", U1)
 
-N_muon = np.genfromtxt('myonen.txt', unpack=True)
+N_muon = np.genfromtxt('myonen_korrektur.txt', unpack=True)
 N_muon_err = np.sqrt(N_muon)
 
 kanalmuon = np.linspace(0,511,512)
-indexmuon0 = [0,1,2,421,426,463,472,498,499,500,501,502,503,504,505,506,507,507,508,509,510,511]
+indexmuon0 = [0,1,2,3,4,5,421,426,463,472,498,499,500,501,502,503,504,505,506,507,507,508,509,510,511]
+N_muon[23] = 134
+N_muon[24] = 133
+N_muon[25] = 132
+N_muon[26] = 130
+#print(N_muon)
 kanalmuon_neu = np.delete(kanalmuon, indexmuon0)
 zeitmuon = zeitregression(kanalmuon_neu,a_zeitkanal,b_zeitkanal)
 zeitmuon_neu = unp.nominal_values(zeitmuon)
@@ -141,11 +149,38 @@ t_muon = np.linspace(-2,13,10000)
 #print(len(zeitmuon_neu_neu))
 #print(len(N_muon))
 
+print(N_muon)
 
-plt.errorbar(zeitmuon_neu_neu,N_muon,xerr=0,yerr=N_muon_err, fmt='kx', label= r'Messwerte')
-plt.plot(t_muon,muonfit(t_muon,*muon_parameter), label=r'Fit')
+plt.errorbar(zeitmuon_neu_neu,N_muon,xerr=0,yerr=N_muon_err, fmt='kx', label= 'Messwerte')
+plt.plot(t_muon,muonfit(t_muon,*muon_parameter), label='Fit')
 plt.xlabel(r'$t\;/\;\mathrm{ns}$')
 plt.ylabel(r'$N(t)$')
-plt.legend(loc="best")
-plt.savefig('blabla.pdf')
+plt.legend()
+#plt.clf()
+#plt.plot([1,0],[0,1])
+#plt.show()
+plt.savefig('test.pdf')
 plt.clf()
+
+#############################################################
+##########Korrektur
+##############################################################
+
+#Interpolierung für fehlende Messdaten (Mittels linearer Regression)
+N_neighbour = np.array([133,152,129,120,118,146,176,164,139,127,120,117,117,100])
+x_neighbour = np.array([18,19,20,21,22,23,24,29,30,31,32,33,34,35])
+x_between = np.array([25,26,27,28])
+
+def linearregression(x,a,b):
+    return a*x + b
+
+neighbourparameter, neighbourparameter_covariance = curve_fit(linearregression,x_neighbour,N_neighbour)
+neighbour_errors = np.sqrt(np.diag(neighbourparameter_covariance))
+a_neighbour = ufloat(neighbourparameter[0],neighbour_errors[0])
+b_neighbour = ufloat(neighbourparameter[1],neighbour_errors[1])
+
+#print("a: ", a_neighbour)
+#print("b: ", b_neighbour)
+
+N_between = linearregression(x_between,a_neighbour,b_neighbour)
+#print(N_between)

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.1.17)  9 DEC 2018 17:41
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2018.1.17)  19 JAN 2019 16:44
  restricted system commands enabled.
 **geaus.tex
 (./geaus.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.102 seconds
+luaotfload | main : initialization completed in 0.112 seconds
 Babel <3.16> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex
 (/home/michael/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cl
@@ -2648,225 +2648,226 @@ Package luatex.def Info: compton_skizze.png  used on input line 70.
 
 warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
 [1]
-<mu_koeff.png, id=68, 609.27625pt x 855.195pt>
+<mu_koeff.png, id=67, 609.27625pt x 855.195pt>
 File: mu_koeff.png Graphic file (type png)
 <use mu_koeff.png>
-Package luatex.def Info: mu_koeff.png  used on input line 99.
+Package luatex.def Info: mu_koeff.png  used on input line 103.
 (luatex.def)             Requested size: 397.34149pt x 557.73622pt.
 (load luc: /home/michael/.local/texlive/2017/texmf-var/luatex-cache/generic/font
 s/otl/lmroman8-regular.luc)(load luc: /home/michael/.local/texlive/2017/texmf-va
 r/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
 warning  (pdf backend): ignoring duplicate destination with the name 'page.2'
 [2<./compton_skizze.png>] [3<./mu_koeff.png>]
-<detektor.png, id=88, 811.03pt x 472.76625pt>
+<detektor.png, id=89, 811.03pt x 472.76625pt>
 File: detektor.png Graphic file (type png)
 <use detektor.png>
-Package luatex.def Info: detektor.png  used on input line 130.
+Package luatex.def Info: detektor.png  used on input line 135.
 (luatex.def)             Requested size: 397.34149pt x 231.62141pt.
- [4<./detektor.png>]
-<blockschaltung.png, id=101, 972.63374pt x 366.36874pt>
+ [4<./detektor.png>] [5]
+<blockschaltung.png, id=107, 972.63374pt x 366.36874pt>
 File: blockschaltung.png Graphic file (type png)
 <use blockschaltung.png>
-Package luatex.def Info: blockschaltung.png  used on input line 194.
+Package luatex.def Info: blockschaltung.png  used on input line 209.
 (luatex.def)             Requested size: 397.34149pt x 149.66989pt.
- [5]
-<spektrum.png, id=112, 820.06375pt x 520.94624pt>
+ [6<./blockschaltung.png>]
+<spektrum.png, id=120, 820.06375pt x 520.94624pt>
 File: spektrum.png Graphic file (type png)
 <use spektrum.png>
-Package luatex.def Info: spektrum.png  used on input line 223.
+Package luatex.def Info: spektrum.png  used on input line 238.
 (luatex.def)             Requested size: 397.34149pt x 252.42015pt.
- [6<./blockschaltung.png>] [7<./spektrum.png>]
+ [7<./spektrum.png>]
 <germania/eu_allgemein/europium.pdf, id=134, 462.52798pt x 346.89601pt>
 File: germania/eu_allgemein/europium.pdf Graphic file (type pdf)
 <use germania/eu_allgemein/europium.pdf>
 Package luatex.def Info: germania/eu_allgemein/europium.pdf  used on input line 
-291.
+309.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
 <germania/eu_allgemein/europilog.pdf, id=135, 462.52798pt x 346.89601pt>
 File: germania/eu_allgemein/europilog.pdf Graphic file (type pdf)
 <use germania/eu_allgemein/europilog.pdf>
 Package luatex.def Info: germania/eu_allgemein/europilog.pdf  used on input line
- 295.
+ 313.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
-<germania/regression/regression.pdf, id=139, 462.52798pt x 346.89601pt>
+ [8]
+<germania/regression/regression.pdf, id=147, 462.52798pt x 346.89601pt>
 File: germania/regression/regression.pdf Graphic file (type pdf)
 <use germania/regression/regression.pdf>
 Package luatex.def Info: germania/regression/regression.pdf  used on input line 
-349.
+367.
 (luatex.def)             Requested size: 265.55629pt x 199.16928pt.
- [8<./germania/eu_allgemein/europium.pdf><./germania/eu_allgemein/europilog.pdf>
-] [9<./germania/regression/regression.pdf>]
-<germania/activity/gausseffizienz.pdf, id=260, 462.52798pt x 346.89601pt>
+ [9<./germania/eu_allgemein/europium.pdf><./germania/eu_allgemein/europilog.pdf>
+] [10<./germania/regression/regression.pdf>]
+<germania/activity/gausseffizienz.pdf, id=266, 462.52798pt x 346.89601pt>
 File: germania/activity/gausseffizienz.pdf Graphic file (type pdf)
 <use germania/activity/gausseffizienz.pdf>
 Package luatex.def Info: germania/activity/gausseffizienz.pdf  used on input lin
-e 431.
+e 449.
 (luatex.def)             Requested size: 265.55629pt x 199.16928pt.
- [10]
-<germanib/cs_allgemein/casenergie.pdf, id=269, 462.52798pt x 346.89601pt>
+ [11<./germania/activity/gausseffizienz.pdf>]
+<germanib/cs_allgemein/casenergie.pdf, id=310, 462.52798pt x 346.89601pt>
 File: germanib/cs_allgemein/casenergie.pdf Graphic file (type pdf)
 <use germanib/cs_allgemein/casenergie.pdf>
 Package luatex.def Info: germanib/cs_allgemein/casenergie.pdf  used on input lin
-e 457.
+e 475.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
-<germanib/cs_allgemein/casenergielog.pdf, id=270, 462.52798pt x 346.89601pt>
+<germanib/cs_allgemein/casenergielog.pdf, id=311, 462.52798pt x 346.89601pt>
 File: germanib/cs_allgemein/casenergielog.pdf Graphic file (type pdf)
 <use germanib/cs_allgemein/casenergielog.pdf>
 Package luatex.def Info: germanib/cs_allgemein/casenergielog.pdf  used on input 
-line 461.
+line 479.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
-<germanib/photo/photoenergien.pdf, id=272, 462.52798pt x 346.89601pt>
+<germanib/photo/photoenergien.pdf, id=313, 462.52798pt x 346.89601pt>
 File: germanib/photo/photoenergien.pdf Graphic file (type pdf)
 <use germanib/photo/photoenergien.pdf>
-Package luatex.def Info: germanib/photo/photoenergien.pdf  used on input line 47
-3.
+Package luatex.def Info: germanib/photo/photoenergien.pdf  used on input line 49
+1.
 (luatex.def)             Requested size: 265.55629pt x 199.16928pt.
- [11<./germania/activity/gausseffizienz.pdf><./germanib/cs_allgemein/casenergie.
-pdf><./germanib/cs_allgemein/casenergielog.pdf>]
-<germanib/rueck/rueckenergie.pdf, id=378, 462.52798pt x 346.89601pt>
+ [12<./germanib/cs_allgemein/casenergie.pdf><./germanib/cs_allgemein/casenergiel
+og.pdf>]
+<germanib/rueck/rueckenergie.pdf, id=384, 462.52798pt x 346.89601pt>
 File: germanib/rueck/rueckenergie.pdf Graphic file (type pdf)
 <use germanib/rueck/rueckenergie.pdf>
-Package luatex.def Info: germanib/rueck/rueckenergie.pdf  used on input line 517
+Package luatex.def Info: germanib/rueck/rueckenergie.pdf  used on input line 535
 .
 (luatex.def)             Requested size: 265.55629pt x 199.16928pt.
- [12<./germanib/photo/photoenergien.pdf>]
-<germanib/compton/kanteenergie.pdf, id=426, 462.52798pt x 346.89601pt>
+ [13<./germanib/photo/photoenergien.pdf>]
+<germanib/compton/kanteenergie.pdf, id=432, 462.52798pt x 346.89601pt>
 File: germanib/compton/kanteenergie.pdf Graphic file (type pdf)
 <use germanib/compton/kanteenergie.pdf>
 Package luatex.def Info: germanib/compton/kanteenergie.pdf  used on input line 5
-35.
+53.
 (luatex.def)             Requested size: 265.55629pt x 199.16928pt.
- [13<./germanib/rueck/rueckenergie.pdf><./germanib/compton/kanteenergie.pdf>]
-<germanib/compton/comptonfitneu.pdf, id=504, 462.52798pt x 346.89601pt>
+ [14<./germanib/rueck/rueckenergie.pdf><./germanib/compton/kanteenergie.pdf>]
+<germanib/compton/comptonfitneu.pdf, id=510, 462.52798pt x 346.89601pt>
 File: germanib/compton/comptonfitneu.pdf Graphic file (type pdf)
 <use germanib/compton/comptonfitneu.pdf>
 Package luatex.def Info: germanib/compton/comptonfitneu.pdf  used on input line 
-561.
+579.
 (luatex.def)             Requested size: 265.55629pt x 199.16928pt.
- [14<./germanib/compton/comptonfitneu.pdf>]
-<germanid/ba_allgemein/baenergie.pdf, id=550, 462.52798pt x 346.89601pt>
+ [15<./germanib/compton/comptonfitneu.pdf>]
+<germanid/ba_allgemein/baenergie.pdf, id=556, 462.52798pt x 346.89601pt>
 File: germanid/ba_allgemein/baenergie.pdf Graphic file (type pdf)
 <use germanid/ba_allgemein/baenergie.pdf>
 Package luatex.def Info: germanid/ba_allgemein/baenergie.pdf  used on input line
- 610.
+ 628.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
-<germanid/ba_allgemein/baenergielog.pdf, id=551, 462.52798pt x 346.89601pt>
+<germanid/ba_allgemein/baenergielog.pdf, id=557, 462.52798pt x 346.89601pt>
 File: germanid/ba_allgemein/baenergielog.pdf Graphic file (type pdf)
 <use germanid/ba_allgemein/baenergielog.pdf>
 Package luatex.def Info: germanid/ba_allgemein/baenergielog.pdf  used on input l
-ine 614.
+ine 632.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
-<germanie/le_allgemein/leenergie.pdf, id=556, 462.52798pt x 346.89601pt>
+<germanie/le_allgemein/leenergie.pdf, id=562, 462.52798pt x 346.89601pt>
 File: germanie/le_allgemein/leenergie.pdf Graphic file (type pdf)
 <use germanie/le_allgemein/leenergie.pdf>
 Package luatex.def Info: germanie/le_allgemein/leenergie.pdf  used on input line
- 683.
+ 701.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
-<germanie/le_allgemein/leenergielog.pdf, id=557, 462.52798pt x 346.89601pt>
+<germanie/le_allgemein/leenergielog.pdf, id=563, 462.52798pt x 346.89601pt>
 File: germanie/le_allgemein/leenergielog.pdf Graphic file (type pdf)
 <use germanie/le_allgemein/leenergielog.pdf>
 Package luatex.def Info: germanie/le_allgemein/leenergielog.pdf  used on input l
-ine 687.
+ine 705.
 (luatex.def)             Requested size: 207.03467pt x 170.71628pt.
- [15<./germanid/ba_allgemein/baenergie.pdf><./germanid/ba_allgemein/baenergielog
+ [16<./germanid/ba_allgemein/baenergie.pdf><./germanid/ba_allgemein/baenergielog
 .pdf>]
-Overfull \hbox (41.90019pt too wide) in paragraph at lines 705--734
+Overfull \hbox (41.90019pt too wide) in paragraph at lines 723--752
  [][] 
  []
 
-[16<./germanie/le_allgemein/leenergie.pdf><./germanie/le_allgemein/leenergielog.
-pdf>] [17]
-<germania/peak1/peak1.pdf, id=704, 462.52798pt x 346.89601pt>
+[17<./germanie/le_allgemein/leenergie.pdf><./germanie/le_allgemein/leenergielog.
+pdf>] [18]
+<germania/peak1/peak1.pdf, id=710, 462.52798pt x 346.89601pt>
 File: germania/peak1/peak1.pdf Graphic file (type pdf)
 <use germania/peak1/peak1.pdf>
-Package luatex.def Info: germania/peak1/peak1.pdf  used on input line 786.
+Package luatex.def Info: germania/peak1/peak1.pdf  used on input line 804.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak2/peak2.pdf, id=705, 462.52798pt x 346.89601pt>
+<germania/peak2/peak2.pdf, id=711, 462.52798pt x 346.89601pt>
 File: germania/peak2/peak2.pdf Graphic file (type pdf)
 <use germania/peak2/peak2.pdf>
-Package luatex.def Info: germania/peak2/peak2.pdf  used on input line 791.
+Package luatex.def Info: germania/peak2/peak2.pdf  used on input line 809.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak3/peak3.pdf, id=706, 462.52798pt x 346.89601pt>
+<germania/peak3/peak3.pdf, id=712, 462.52798pt x 346.89601pt>
 File: germania/peak3/peak3.pdf Graphic file (type pdf)
 <use germania/peak3/peak3.pdf>
-Package luatex.def Info: germania/peak3/peak3.pdf  used on input line 796.
+Package luatex.def Info: germania/peak3/peak3.pdf  used on input line 814.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak4/peak4.pdf, id=707, 462.52798pt x 346.89601pt>
+<germania/peak4/peak4.pdf, id=713, 462.52798pt x 346.89601pt>
 File: germania/peak4/peak4.pdf Graphic file (type pdf)
 <use germania/peak4/peak4.pdf>
-Package luatex.def Info: germania/peak4/peak4.pdf  used on input line 801.
+Package luatex.def Info: germania/peak4/peak4.pdf  used on input line 819.
 (luatex.def)             Requested size: 138.02547pt x 142.26534pt.
-<germania/peak5/peak5.pdf, id=708, 462.52798pt x 346.89601pt>
+<germania/peak5/peak5.pdf, id=714, 462.52798pt x 346.89601pt>
 File: germania/peak5/peak5.pdf Graphic file (type pdf)
 <use germania/peak5/peak5.pdf>
-Package luatex.def Info: germania/peak5/peak5.pdf  used on input line 806.
+Package luatex.def Info: germania/peak5/peak5.pdf  used on input line 824.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak6/peak6.pdf, id=709, 462.52798pt x 346.89601pt>
+<germania/peak6/peak6.pdf, id=715, 462.52798pt x 346.89601pt>
 File: germania/peak6/peak6.pdf Graphic file (type pdf)
 <use germania/peak6/peak6.pdf>
-Package luatex.def Info: germania/peak6/peak6.pdf  used on input line 811.
+Package luatex.def Info: germania/peak6/peak6.pdf  used on input line 829.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak7/peak7.pdf, id=710, 462.52798pt x 346.89601pt>
+<germania/peak7/peak7.pdf, id=716, 462.52798pt x 346.89601pt>
 File: germania/peak7/peak7.pdf Graphic file (type pdf)
 <use germania/peak7/peak7.pdf>
-Package luatex.def Info: germania/peak7/peak7.pdf  used on input line 816.
+Package luatex.def Info: germania/peak7/peak7.pdf  used on input line 834.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak8/peak8.pdf, id=711, 462.52798pt x 346.89601pt>
+<germania/peak8/peak8.pdf, id=717, 462.52798pt x 346.89601pt>
 File: germania/peak8/peak8.pdf Graphic file (type pdf)
 <use germania/peak8/peak8.pdf>
-Package luatex.def Info: germania/peak8/peak8.pdf  used on input line 821.
+Package luatex.def Info: germania/peak8/peak8.pdf  used on input line 839.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak9/peak9.pdf, id=712, 462.52798pt x 346.89601pt>
+<germania/peak9/peak9.pdf, id=718, 462.52798pt x 346.89601pt>
 File: germania/peak9/peak9.pdf Graphic file (type pdf)
 <use germania/peak9/peak9.pdf>
-Package luatex.def Info: germania/peak9/peak9.pdf  used on input line 826.
+Package luatex.def Info: germania/peak9/peak9.pdf  used on input line 844.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak10/peak10.pdf, id=713, 462.52798pt x 346.89601pt>
+<germania/peak10/peak10.pdf, id=719, 462.52798pt x 346.89601pt>
 File: germania/peak10/peak10.pdf Graphic file (type pdf)
 <use germania/peak10/peak10.pdf>
-Package luatex.def Info: germania/peak10/peak10.pdf  used on input line 831.
+Package luatex.def Info: germania/peak10/peak10.pdf  used on input line 849.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
-<germania/peak11/peak11.pdf, id=714, 462.52798pt x 346.89601pt>
+<germania/peak11/peak11.pdf, id=720, 462.52798pt x 346.89601pt>
 File: germania/peak11/peak11.pdf Graphic file (type pdf)
 <use germania/peak11/peak11.pdf>
-Package luatex.def Info: germania/peak11/peak11.pdf  used on input line 836.
+Package luatex.def Info: germania/peak11/peak11.pdf  used on input line 854.
 (luatex.def)             Requested size: 129.65515pt x 142.26534pt.
 
 
-LaTeX Warning: Float too large for page by 70.26108pt on input line 841.
+LaTeX Warning: Float too large for page by 70.26108pt on input line 859.
 
-[18] [19<./germania/peak1/peak1.pdf><./germania/peak2/peak2.pdf><./germania/peak
+[19] [20<./germania/peak1/peak1.pdf><./germania/peak2/peak2.pdf><./germania/peak
 3/peak3.pdf><./germania/peak4/peak4.pdf><./germania/peak5/peak5.pdf><./germania/
 peak6/peak6.pdf><./germania/peak7/peak7.pdf><./germania/peak8/peak8.pdf><./germa
 nia/peak9/peak9.pdf><./germania/peak10/peak10.pdf><./germania/peak11/peak11.pdf>
 ](load luc: /home/michael/.local/texlive/2017/texmf-var/luatex-cache/generic/fon
 ts/otl/lmromancaps10-regular.luc)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 845.
- [20]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 845.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 863.
+ [21]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 863.
  (./geaus.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 845.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 845.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 863.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 863.
 Package rerunfilecheck Info: File `geaus.aux' has not changed.
-(rerunfilecheck)             Checksum: 2FA943A954B5D6D17CFE06FF769EBE29;14589.
+(rerunfilecheck)             Checksum: 5150C8A9AC4E70A954AA4DDB5461378D;14741.
 Package rerunfilecheck Info: File `geaus.toc' has not changed.
-(rerunfilecheck)             Checksum: A4EC6BE79BDD7D99532464577C37D11C;1359.
+(rerunfilecheck)             Checksum: A97476EC4E0A1184DCF7AC49AE27DDF2;1359.
 Package logreq Info: Writing requests to 'geaus.run.xml'.
 
 \openout1 = geaus.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 41851 strings out of 494478
+ 41855 strings out of 494478
  100000,1648299 words of node,token memory allocated
  619 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 9 attribute, 80 glue_spec, 9 attrib
 ute_list, 1 write nodes
-   avail lists: 1:1,2:1737,3:129,4:45,5:301,6:4213,7:1383,8:104,9:546,10:16,11:5
-91
- 44625 multiletter control sequences out of 65536+600000
- 143 fonts using 51478531 bytes
+   avail lists: 1:1,2:1737,3:129,4:53,5:260,6:3281,7:1383,8:104,9:546,10:17,11:4
+50
+ 44626 multiletter control sequences out of 65536+600000
+ 143 fonts using 51477895 bytes
  61i,23n,104p,8834b,3080s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/michael/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-
 regular.otf></home/michael/.local/texlive/2017/texmf-dist/fonts/opentype/public/
@@ -2882,10 +2883,10 @@ fonts/opentype/public/lm/lmroman10-regular.otf></home/michael/.local/texlive/201
 7/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/michael/.loca
 l/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/mich
 ael/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on geaus.pdf (22 pages, 647496 bytes).
+Output written on geaus.pdf (23 pages, 647500 bytes).
 
-PDF statistics: 1298 PDF objects out of 1440 (max. 8388607)
- 574 compressed objects within 6 object streams
- 72 named destinations out of 1000 (max. 131072)
+PDF statistics: 1304 PDF objects out of 1440 (max. 8388607)
+ 579 compressed objects within 6 object streams
+ 75 named destinations out of 1000 (max. 131072)
  121 words of extra memory for PDF output out of 10000 (max. 100000000)
 

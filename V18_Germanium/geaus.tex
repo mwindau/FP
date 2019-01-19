@@ -21,48 +21,48 @@
 \section*{Zielsetzung}
 
 Ziel dieses Versuches ist es, sich mit der Funktionsweise eines Reinst-Germanium-Detektors
-für die Gamma-Spektroskopie vertraut zu machen. Anschließend wird nach einer Energieeichung
+für die Gamma-Spektroskopie vertraut zu machen. Anschließend wird nach einer Kalibrierung
 des Detektors versucht, aktive Nuklide zu identifizieren.
 
   \section{Theorie}
     \label{sec:Theorie}
 
-    Bei der Gamma-Spektroskopie handelt es sich um die Messung von Gammastrahlung (Photonen).
-    Dringt ein Photon in die Materie eines Absorbers ein, kann es dort eine Vielzahl von Wechselwirkungen vollziehen.
+    Bei der Gamma-Spektroskopie handelt es sich um die Messung von Gammastrahlung.
+    Dringt ein Gammaquant in den Absorber ein, kann es dort eine Vielzahl von Wechselwirkungen vollziehen.
     Durch diese erfährt es Intensitätsverluste, welche abhängig von der
     Schichtdicke $D$, der Anzahl der Elektronen pro Volumeneinheit n und dem Wirkungsquerschnitt $\sigma$ der Photonen sind:
     \begin{align}
-      N(D) &= \symup{N}_0\,\cdot\,\symup{exp}(-\mu\cdot\sigma)\\
+      N(D) &= \symup{N}_0\,\cdot\,\symup{exp}(-\mu\cdot D)\\
       \mu &= \symup{n}\cdot\sigma
     \end{align}
     Dabei steht $N$ für die Strahlintensität und $\symup{N}_0$ für die ursprüngliche
-    Strahlungsintensität.
-    $\mu$ wird als Extinktionskoeffizient bezeichnet, und ist der reziproke Wert der
+    Strahlintensität.
+    Die Variable $\mu$ wird als Extinktionskoeffizient bezeichnet und ist der reziproke Wert der
     mittleren Reichweite $\bar{x}$ der Photonen. Der Wirkungsquerschnitt $\sigma$ ist ein Maß
     für die Wahrscheinlichkeit einer Wechselwirkung.
 
     \subsection{Wechselwirkungen}
     \label{sec:Wechselwirkungen}
 
-    Bei den Wechselwirkungen stehen besonders der \textbf{(innere) Photoeffekt}, der \textbf{Comptoneffekt} und
-    die \textbf{Paarbildung} im Vordergrund.
+    Bei den Wechselwirkungen stehen besonders der (innere) Photoeffekt, der Comptoneffekt und
+    die Paarbildung im Vordergrund.
 
-    Der \textbf{Photoeffekt} tritt auf, wenn das Photon mit einem Hüllenelektron (bevorzugt aus
-    der K-Schale) wechselwirkt. Dabei nimmt das Elektron das Photon auf und wird aus der
+    Der Photoeffekt tritt auf, wenn das Photon mit einem Hüllenelektron (bevorzugt aus
+    der K-Schale) wechselwirkt. Dabei nimmt das Elektron die Energie des Gammaquants auf und wird aus der
     Hülle gelöst, wobei das enstehende Loch anschließend unter dem Emittieren von Röntgenstrahlung von Elektronen höherer Schalen aufgefüllt wird.
-    Damit dieser Effekt auftreten kann, muss die Photonenergie größer als die Bindungsenergie des Elektrons sein.
-    Da bei diesem Vorgang das Photon vernichtet wird, und die Röntgenstrahlung selten den Absorber verlassen kann,
+    Damit dieser Effekt auftreten kann, muss die Gammaenergie größer als die Bindungsenergie des Elektrons sein.
+    Da bei diesem Vorgang das Gammaquant vernichtet wird und die Röntgenstrahlung selten den Absorber verlassen kann,
     wird die gesamte Energie des Teilchens im Absorber deponiert. Der Wirkungsquerschnitt des Photoeffekts ist dabei
     abhängig von der Kernladungszahl $Z$, und der Quantenenergie $E$:
     \begin{align}
       \sigma_{\symup{Ph}}\,\sim\,Z^{\alpha}\,\cdot\,E^{\delta}\\
     \end{align}
-    Die Faktoren $\alpha$ und $\delta$ sind selber abhängig vom Energiebereich eines Strahlers, und liegen für
+    Die Faktoren $\alpha$ und $\delta$ sind selber abhängig vom Energiebereich eines Strahlers und liegen für
     natürliche Strahler bei $4 < \alpha < 5$ und $\delta \approx -3.5$.
 
 
-    Der \textbf{Comptoneffekt} ist vergleichbar mit einem unelastischen Stoß zwischen
-    dem Photon und einem freien ruhenden punktförmigen Elektron. Dabei gibt das Photon
+    Der Comptoneffekt ist vergleichbar mit einem elastischen Stoß zwischen
+    dem Gammaquant und einem freien ruhenden punktförmigen Elektron. Dabei gibt das Gammaquant
     bei der Wechselwirkung einen Teil seiner Energie dem Elektron in Form von kinetischer Energie, und
     ändert dabei die Richtung seiner Flugbahn (vergleiche Abb. \ref{fig:compton_skizze}).
     \begin{figure}
@@ -74,25 +74,29 @@ des Detektors versucht, aktive Nuklide zu identifizieren.
     Die Energie des Elektrons ergibt sich zu
     \begin{align}
       E_l &= E_\gamma \,\frac{\varepsilon(1-\symup{cos}\,\Psi_\gamma)}{1+\varepsilon(1-\symup{cos}\,\Psi_\gamma)}\\
-      \varepsilon &= E_\gamma\,/\,(\symup{m}_0 \symup{c}^2)
+      \varepsilon &= E_\gamma\,/\,(\symup{m}_0 \symup{c}^2),
     \end{align}
-    wobei $E_\gamma$ die Photonenergie, $\Psi_\gamma$ den Winkel des gestreuuten Photon,
+    wobei $E_\gamma$ die ursprüngliche Gammaenergie, $\Psi_\gamma$ den Winkel des gestreuten Gammaquants,
     $\symup{m_0}$ die Ruhemasse des Elektrons und c die Lichtgeschwindigkeit darstellt.
-    Da das Photon beim Comptoneffekt nie seine gesamte Energie deponiert, ist er ein
-    eher unerwünschter Effekt bei der Gamma-Spektroskopie. Sein Wirkungsquerschnitt $\sigma_{\symup{Co}}$
-    fällt mit steigender Photonenergie, und für $\varepsilon\, \to \, 0$ geht er in den
-    Thomsonschen Streuquerschnitt $\sigma_{\symup{Th}}$ über.
+    Da das Gammaquant beim Comptoneffekt nie seine gesamte Energie deponiert, ist er ein
+    eher unerwünschter Effekt bei der Gammaspektroskopie. Sein Wirkungsquerschnitt $\sigma_{\symup{Co}}$ wurden von
+    Klein und Nishina hergeleitet:
+    \begin{align}
+      \sigma_{\symup{Co}} = \frac{3}{4}\sigma_{\symup{Th}}\left(\frac{1+\varepsilon}{\varepsilon^2}\left(\frac{2+2\varepsilon}{1+2\varepsilon}-\varepsilon^{-1}\symup{ln}(1+2\varepsilon)\right)
+      + \frac{1}{2\varepsilon}\symup{ln}(1+2\varepsilon) - \frac{1+3\varepsilon}{(1+2\varepsilon)^2}\right)
+    \end{align}
+    Dabei steht $\sigma_{\symup{Th}}$ für den Thomsonschen Streuquerschnitt.
 
-    Bei der \textbf{Paarbildung} spaltet sich das Photon in ein Elektron und dessen Antiteilchen, ein Positron.
-    Dafür benötigt das Photon eine Energie, die größer ist als die zweifache Ruhemasse des Elektrons.
-    Da das Photon in seinem eigenen Ruhesystem ruht, braucht es einen Stoßpartner für die Paarbildung.
-    Aufgrund der auftretenden Rückstoßenergie, die auf den Stoßpartner wirkt, braucht es bei der
-    Elektron-Elektron Wechselwirkung sogar die vierfache Ruhemasse für den Paarbildungsprozess.
+    Bei der Paarbildung spaltet sich das Gammaquant in ein Elektron und dessen Antiteilchen, ein Positron auf.
+    Dafür benötigt das Gammaquant eine Energie, die größer ist als die zweifache Ruhemasse des Elektrons.
+    Da das Gammaquant in seinem eigenen Ruhesystem ruht, braucht es einen Stoßpartner für die Paarbildung.
+    Aufgrund der auftretenden Rückstoßenergie, die auf den Stoßpartner wirkt, braucht es bei dem Stoß zwischen
+    Gammaquant und Elektron sogar die vierfache Ruhemasse für den Paarbildungsprozess.
     Der Wirkungsquerschnitt $\sigma_{\symup{Pa}}$ der Paarbildung ist abhängig von dem Ort der Wechselwirkung.
-    Je nachdem, wo in der Hülle des Atoms die Wechselwirkung stattfindet, erfährt das Photon eine unterschiedlich
+    Je nachdem, wo in der Hülle des Atoms die Wechselwirkung stattfindet, erfährt das Gammaquant eine unterschiedlich
     starke Abschirmung.
 
-    Zur Darstellung der Wirkungsquerschnitte der beschriebenen Wechselwirkungen, ist in Abb. \ref{fig:mu_koeff}
+    Zur Darstellung der Wirkungsquerschnitte der beschriebenen Wechselwirkungen ist in Abb. \ref{fig:mu_koeff}
     die Energieabhängigkeit der verschiedenen Extinktionskoeffizienten $\mu$ für Germanium abgebildet.
     \begin{figure}
       \centering
@@ -103,28 +107,29 @@ des Detektors versucht, aktive Nuklide zu identifizieren.
 
     \subsection{Funktionsweise des Reinst-Germanium-Detektors}
 
-    Bei dem Germanium-Detektor handelt es sich um einen \textbf{Halbleiter-Detektor}.
-    Er besteht aus einem \textbf{p-dotierten}- und einem \textbf{n-dotierten}-Bereich, welche
+    Bei dem Germanium-Detektor handelt es sich um einen Halbleiter-Detektor.
+    Er besteht aus einem p-dotierten- und einem n-dotierten-Bereich, welche
     sich durch einen Überschuss an Elektronen bzw. Elektronenlöchern kennzeichnen.
     An den Grenzflächen dieser Bereiche rekombinieren die Ladungsträger und bilden eine
     verarmte Zone. Diese verarmte Zone wird maximiert, indem eine äußere Spannung angelegt wird, sowie
-    eine möglichst ungleich verteilte Dotierung gewählt wird. Wenn ein Photon in diese
-    vergrößerte ($\SI{6}{\centi\meter}$) verarmte Zone eindringt, enstehen mehrere
-    Paare aus Elektronen und Löchern, welche durch die herschende äußere Spannung an verschiedene
+    eine möglichst ungleich verteilte Dotierung gewählt wird. Wenn ein Gammaquant in diese
+    vergrößerte verarmte Zone eindringt, enstehen mehrere
+    Paare aus Elektronen und Löchern, welche durch die äußere Spannung an verschiedene
     Elektroden gesaugt werden. Dabei muss die Spannung hoch genug sein, um die Ladungsträger zu trennen,
     bevor sie rekombinieren können. Aus dem enstehenden Ladungsimpuls bei der Trennung lässt sich
-    über geeignete Verfahren auf die Energie der Photonen schließen.
+    über geeignete Verfahren auf die deponierte Energie der Gammaquanten schließen.
     Die äußere Spannung darf dabei nicht zu hoch gewählt werden, da durch
-    thermische Aktivierung stets ein Strom ensteht, der sich, durch die Spannung verstärkt,
-    negativ auf den Detektor auswirkt. Um diesem Strom entgegenzuwirken, wird der
+    thermische Aktivierung stets ein paar Elektron-Loch-Paare enstehen, die durch die angelegte
+    Spannung getrennt und als Ladungsimpulse detektiert werden. Um diesem Effekt entgegenzuwirken, wird der
     Detektor auf $\SI{77}{\kelvin}$ gekühlt.
 
-    Der Reinst-Germanium-Detektor ist zylinderartig aufgebaut, und hat den in Abb. \ref{fig:detektor}
+    Der Reinst-Germanium-Detektor ist zylinderartig aufgebaut und hat den in Abb. \ref{fig:detektor}
     dargestellten Querschnitt. Seinen n-dotierten Bereich bildet die mit Lithium diffundierte Oberfläche,
-    während seine innere Oberfläche mit Gold diffundiert ist, und den p-dotierten Bereich darstellt.
-    Um den Detektor herum ist eine Aluminiumschicht zum abfangen von Photonen mit geringer Energie.
-    Die gesamte Apperatur ist mit Blei umgeben, um Strahlung von außerhalb abzuhalten.
-    Der Detektor kann eine Photonenenergie von einigen MeV messen.
+    während seine innere Oberfläche mit Gold diffundiert ist und den p-dotierten Bereich darstellt.
+    Um den Detektor herum ist zum Schutz eine Aluminiumschicht, welche dazu führt dass Gammaquanten erst ab einer
+    bestimmten Energie detektiert werden können.
+    Die gesamte Apparatur ist mit Blei umgeben, um Strahlung von außerhalb abzuhalten.
+    Der Detektor kann eine Gammaenergie von einigen MeV messen.
     \begin{figure}
       \centering
       \includegraphics[width=0.95\textwidth]{detektor.png}
@@ -132,56 +137,66 @@ des Detektors versucht, aktive Nuklide zu identifizieren.
       \label{fig:detektor}
     \end{figure}
 
-    Als nächstes soll auf das \textbf{energetische Auflösungsvermögen} des Detektors eingegangen
-    werden. Dieses ist ein Maß dafür, wie genau der Detektor nah aneinander liegende Spektrallinien
-    voneinander unterscheiden kann. Dafür wird eine Halbwertsbreite $\Delta E_{1/2}$ eingeführt, auf deren
-    Ursprung später noch eingegangen wird. Aus der Betrachtung der Ladungsträgererzeugung als
-    Poisson-verteilter Prozess, lässt sich die Halbwertsbreite wie folgt beschreiben:
+    Als nächstes wird auf das energetische Auflösungsvermögen des Detektors eingegangen.
+    Dieses ist ein Maß dafür, wie genau der Detektor nah aneinander liegende Spektrallinien
+    voneinander unterscheiden kann. Dafür wird eine Halbwertsbreite $\Delta E_{1/2}$ eingeführt, die den benötigten Abstand
+    der Mittelwerte $E_1$ und $E_2$ voneinander darstellt, um eine sichere Trennung der Sprektrallinien zu gewährleisten.
+    Für die Bestimmung von $\Delta E_{1/2}$ ist die Anzahl $n$ der erzeugten Elektron-Loch-Paare bei der Absorption eines
+    Gammaquants entscheidend. Aus dem Verhältnis von Gammaenergie zu Bindungsenergie der Elektron-Loch-Paare, lässt sich
+    der Mittelwert $\bar{n}$ bestimmen. Da jedoch das Gamma seine Energie auch zur Erzeugung von Phononen verteilt, ergibt sich
+    ein Zusammenhang zwischen der Anzahl von Elektron-Loch-Paaren und den Phononen. Dies führt dazu dass der Fehler nicht mehr aus der Wurzel des
+    Mittelwertes ensteht, sondern mit einem sogenannten Fano-Faktor ergänzt wird:
     \begin{align}
-      \Delta E_{1/2} \approx 2.35\cdot(0.1\,E_\gamma\,E_{\symup{El}})^{\frac{1}{2}}
+      \sigma = \sqrt{\symup{F}\bar{n}}
+    \end{align}
+    Aufgrund der vielen Elektron-Loch-Paare lässt sich die Poisson-Verteilung als
+    Normalverteilung annähern, wobei gerade $\Delta E_{1/2}$ der Halbwertsbreite entspricht.
+    Mit einem Fano-Faktor von 0.1 bei Germanium, ergibt sich:
+    \begin{align}
+      \Delta E_{1/2} = 2\sqrt{2\symup{ln}2}\,\frac{E_{\gamma}\sigma}{\bar{n}} \approx 2.35\cdot(0.1\,E_\gamma\,E_{\symup{El}})^{\frac{1}{2}}
       \label{eqn:auflsg}
     \end{align}
     Dabei steht $E_{\symup{El}}$ für die Bildungsenergie eines Paares von Elektron und Loch.
-    Für einen Germanium-Detektor liegt die typische Halbwertsbreite bei
+    Für einen Germanium-Detektor liegt die typische Halbwertsbreite für $\SI{500}{\kilo\electronvolt}$ bei
     $\Delta E_{1/2} =\SI{895}{\electronvolt}$.
     Problematisch für das energetische Auflösungsvermögen sind jedoch Effekte wie das Rauschen
-    des Verstärkers, die Feldinhomogenität durch die Ladungsträger sowie der zuvor genannte
-    Strom durch die thermische Aktivierung und der äußeren Spannung.
-    Dafür wird Abhilfe geschaffen, indem nicht nur der Detektor, sondern auch der
-    angeschlossene Verstärker gekühlt wird. Da die Feldinhomogenität durch eine hohe
+    des Verstärkers, die Feldinhomogenität sowie der zuvor genannte
+    Strom durch die thermische Aktivierung.
+    Dafür wird nicht nur der Detektor, sondern auch der
+    angeschlossene Verstärker gekühlt. Da die Feldinhomogenität durch eine hohe
     äußere Spannung verringert werden kann (welche den störenden Strom erhöht), muss ein Mittelmaß
     für diese gefunden werden.
 
-    Zuletzt wird noch auf die \textbf{Effizienz} des Detektors eingegangen.
+    Zuletzt wird noch auf die Effizienz des Detektors eingegangen.
     Diese steht für die Energieabhängigkeit der Wahrscheinlichkeit für die vollständige Absorption
-    eines Photons, da diese zum großen Teil ihre Energie nicht komplett im Detektor deponieren.
+    eines Gammaquants, da nicht alle Gammaquanten ihre Energie komplett im Detektor deponieren.
     Dies folgt daraus, dass zu einer vollständige Deponierung nur der Photoeffekt fähig ist.
 
 \section{Durchführung}
 \label{sec:Durchführung}
 
     Zunächst wird die Schaltung des Versuches erläutert. Anschließend wird auf das
-    enstehende Spektrum des Detektors, sowie auf die Durchführung eingegangen.
+    Spektrum eines Gamma-Stahlers, welches mit dem Detektor gemessen wurde, eingegangen.
 
     \subsection{Elektronische Schaltung}
 
     Wie bereits im vorherigen Kapitel beschrieben, erzeugt der Detektor elektrische
-    Ladungsimpulse, die proportional zur Photonenenergie sind. Diese Impulse werden durch
-    elektrische Integration von einem \textbf{kapazitiv rückgekoppelten Operationsverstärker}
-    in Spannungsimpulse umgewandelt. Für die Trennung der einzelnen Spannungsimpulse, wird
-    der im Operationsverstärker eingebaute Integrationskondensator nach jedem Impuls durch die
-    Bestrahlung einer Leuchtdiode (LED) entladen. Diese Konstruktion bildet den sogenannten \textbf{Vorverstärker}.
+    Ladungsimpulse, die proportional zur deponierten Gammaenergie sind. Diese Impulse werden durch
+    elektrische Integration von einem kapazitiv rückgekoppelten Operationsverstärker
+    in Spannungsimpulse umgewandelt. Für die Trennung der einzelnen Spannungsimpulse wird
+    der eingebaute Integrationskondensator nach jedem Impuls mittels einer optoelektronischen
+    Rückkopplung entladen. Diese Konstruktion bildet den sogenannten Vorverstärker.
 
-    An den Vorverstärker angeschlossen folgt der \textbf{Hauptverstärker}.
+    An den Vorverstärker angeschlossen folgt der Hauptverstärker.
     Dieser verstärkt die Spannungsimpulse auf eine Skala von 0 bis 10 Volt, und
-    gibt sie anschließend in einen \textbf{Analog-to-Digital-Converter} (ADC) weiter.
+    gibt sie anschließend an einen Analog-to-Digital-Converter (ADC) weiter.
     Dieser verwandelt die Impulse in einen brauchbaren Datensatz. Um sogenannte Pile-Ups, das
     heißt die Verwechslung von einem hohen und mehreren schnell aufeinanderfolgenden Impulsen,
-    zu verhindern, wird für jeden Impuls der ADC für die benötigte Zeit gesperrt. Dadurch
+    zu verhindern, wird für jeden Impuls der ADC für die benötigte Umwandlungszeit gesperrt. Dadurch
     ensteht eine effektive Totzeit, die von der gesamten gemessenen Zeit abgezogen werden muss.
 
-    Die Impulse gelangen anschließend in einen \textbf{Vielkanalanalysator} (VKA), wo
-    sie der Höhe und Anzahl nach sortiert werden, und auf den verschiedenen Kanälen des VKA
+    Die Impulse gelangen anschließend über einen Adressregister in einen Speicher, wo
+    sie der Höhe und Anzahl nach sortiert werden, und auf den verschiedenen Kanälen
     gespeichert werden. An einem Computer lassen sich dann nach der Messzeit die gemessenen
     Signale als Impulshöhenspektrum darstellen.
 
@@ -192,53 +207,56 @@ des Detektors versucht, aktive Nuklide zu identifizieren.
     \begin{figure}
       \centering
       \includegraphics[width=0.95\textwidth]{blockschaltung.png}
-      \caption{Blockschaltbild der elektrischen Schaltung. Der Temperaturwächter verhindert dass die Hochspannung
+      \caption{Blockschaltbild der elektrischen Schaltung. Der Temperaturwächter verhindert, dass die Hochspannung
       an einen Detektor angelegt wird, der nicht ausreichend gekühlt ist \cite{anleitungv18}.}
       \label{fig:blockschaltbild}
     \end{figure}
 
     \subsection{Energiespektrum}
 
-    Das bei einem Germanium-Detektor enstehende Spektrum ist in Abb. \ref{fig:spektrum}
+    Ein beispielhaftes Spektrum eines monochromatischen Gamma-Strahlers ist in Abb. \ref{fig:spektrum}
     dargestellt. Von besonderem Interesse ist dabei der Photo- bzw. Vollenergiepeak, da
-    dieser die Photonen beschreibt, die ihre gesamte Energie im Detektor deponieren.
+    dieser die Gammaquanten beschreibt, die ihre gesamte Energie im Detektor deponieren.
     Seine Halbwertsbreite ist die im vorherigen Kapitel beschriebene energetische Halbwertsbreite
-    $\Delta E_{1/2}$, und gibt daher Auskunft über die Auflösung des Detektors.
+    $\Delta E_{1/2}$ und gibt daher Auskunft über die Auflösung des Detektors.
     Das in Abb. \ref{fig:spektrum} zu sehende Compton-Kontinuum ist dagegen ein eher
-    unerwünschter Effekt, da bei diesem die Photonen nur einen Teil ihrer Energie deponieren.
-    Es besteht zum einen aus dem Rückstreupeak, welcher durch die Photonen ensteht, die
-    nicht direkt in den Detektor gelangen. Damit sind vorallem die Photonen gemeint die
-    aus der Probe in einem hohen Winkel von dem Detektor weggestrahlt werden, und erst über mehrere
+    unerwünschter Effekt, da bei diesem die Gammaquanten nur einen Teil ihrer Energie deponieren.
+    Es besteht zum einen aus dem Rückstreupeak, welcher durch die Gammaquanten ensteht, die
+    nicht direkt in den Detektor gelangen. Damit sind vor allem die Gammaquanten gemeint die
+    aus der Probe von dem Detektor weggestrahlt werden und erst über mehrere
     Wechselwirkungen mit der Umgebung in den Detektor gelangen. Zum Anderen besteht das
-    Kontinuum aus der Comptonkante. Diese bezeichnet das Ende des Kontinuums, und damit den
+    Kontinuum aus der Comptonkante. Diese bezeichnet das Ende des Kontinuums und damit den
     maximalen Energieübertrag des Comptoneffekts bei einem Streuwinkel von 180°. Der
     maximale Energieübertrag beträgt dabei
     \begin{align}
       E_{\symup{max}} = 2\varepsilon\,E_\gamma\,/\,(1+2\varepsilon).
     \end{align}
     Die geringe Intensität nach der Comptonkante ensteht durch mehrfache Comptonstreuung
-    von einem Photon.\\
+    von einem Gammaquant.\\
     \begin{figure}
       \centering
       \includegraphics[width=0.95\textwidth]{spektrum.png}
       \caption{Intensität des von einem Germanium-Detektors aufgenommenen
-       Energiespektrums  \cite{anleitungv18}.}
+       Energiespektrums eines monochromatischen Gamma-Strahlers  \cite{anleitungv18}.}
       \label{fig:spektrum}
     \end{figure}
 
     \noindent
-    Um die Messergebnisse des Detektors auslesen zu können, muss eine Eichung erfolgen.
+    Um die Messergebnisse des Detektors auslesen zu können, muss eine Kalibrierung erfolgen.
     Aus dem aufgenommenen Spektrum eines bekannten Energiespektrums lässt sich mittels einer linearen
     Ausgleichsrechnung eine Umrechnungsmöglichkeit von Kanalnummer auf Energie bestimmen.
-    Zusätzlich muss für die Eichung die zuvor erwähnte Effizienz Q des Detektors bestimmt werden.
+    Zusätzlich wird bei der Kalibrierung die zuvor erwähnte Effizienz Q des Detektors bestimmt, da sie
+    aufgrund der vielen Linien im Spektrum dort besonders gut bestimmbar ist.
     Diese ergibt sich aus
     \begin{align}
-      \symup{Q} = 4\pi\,\cdot\symup{Z}\,(\Omega\cdot\symup{A}\cdot\symup{W})^{-1}.
+      \symup{Q} = 4\pi\,\cdot\symup{Z}\,(\Omega\cdot\symup{A}\cdot\symup{W}\cdot t_{mess})^{-1}.
+      \label{eqn:effizienz}
     \end{align}
-    Dabei steht W für die Emissionswahrscheinlichkeit einer bestimmten Photonenergie, Z für
-    die Summe der Impulse in einem aufgezeichneten Peak (aus Spektrum ablesbar), A für die
-    Aktivität des Strahlers und $\Omega$ für den Raumwinkel. Die Aktivität A muss aus den
-    Herstellungsangaben für den Strahler und dem Zerfall des Nuklides bestimmt werden. Der
+    Dabei steht W für die Emissionswahrscheinlichkeit einer bestimmten Gammaenergie, Z für
+    die Summe der Impulse in einem aufgezeichneten Peak (aus dem Spektrum ablesbar), A für die
+    Aktivität des Strahlers, $\Omega$ für den Raumwinkel, unter dem der Detektor den
+    Strahler sieht und $t_{mess}$ für die Messzeit. Die Aktivität A muss aus den
+    Herstellerangaben für den Strahler und dem Zerfall des Nuklides bestimmt werden. Der
     Raumwinkel $\Omega$ lässt sich aus
     \begin{equation}
       \frac{\Omega}{4\pi}=\frac12\left(1-\frac a{\sqrt{a²+r²}}\right)
@@ -247,18 +265,18 @@ des Detektors versucht, aktive Nuklide zu identifizieren.
     berechnen, wobei der Abstand a von Probe zum Detektor groß gegenüber der Größe der Probe sein muss.
     Der Radius r des Detektors lässt sich aus Abb. \ref{fig:detektor} ablesen.
 
-    Nach der durchgeführten Energieeichung lässt sich aus aufgenommenen Energiespektren
+    Nach der durchgeführten Energiekalibrierung lässt sich aus aufgenommenen Energiespektren
     auf Aktivität und Nuklidart der Probe schließen.
 
     \subsection{Versuchsdurchführung}
 
-    Für die Eichung wird als erstes für etwa eine Stunde das bereits bekannte Energiespektrum eines
-    Europium-Strahlers aufgenommen.
-    Als nächstes wird circa eine Stunde lang das Spektrum eines Caesium-Strahlers
+    Für die Kalibrierung wird als erstes für etwa eine Stunde das bereits bekannte Energiespektrum eines
+    $\ce{^{152}}\symup{Eu}$-Strahlers aufgenommen.
+    Als nächstes wird circa eine Stunde lang das Spektrum eines $\ce{^{137}}\symup{Cs}$-Strahlers
     gemessen, um charakteristische Größen wie das Compton-Kontinuum oder
     den Photopeak zu erhalten.
     Anschließend wird ein Strahler für eine Stunde
-    aufgezeichnet, bei dem es sich entweder um Antimon oder Barium handelt. Es soll die Aktivität des
+    aufgezeichnet, bei dem es sich entweder um $\ce{^{125}}\symup{Sb}$ oder $\ce{^{133}}\symup{Ba}$ handelt. Es soll die Aktivität des
     Strahlers ermittelt werden.
     Zum Schluss wird zur Nuklidbestimmung ein gänzlich unbekannter Strahler gemessen.
 

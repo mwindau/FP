@@ -1927,7 +1927,7 @@
     <bcf:citekey order="1">pdg</bcf:citekey>
     <bcf:citekey order="2">anleitung</bcf:citekey>
     <bcf:citekey order="3">anleitung</bcf:citekey>
-    <bcf:citekey order="4">pdg</bcf:citekey>
+    <bcf:citekey order="4">PhysRevD.98.030001</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">
