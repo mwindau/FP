@@ -1,3 +1,120 @@
 \section{Theorie}
 \label{sec:Theorie}
 
+        \subsection{Effektive Masse}
+
+            In der Effektiv-Massen-Näherung wird das Leitungsband eines Halbleiter-Kristalls 
+            als parabelförmig mit einem Minimum bei $k=0$ angenommen. Das Energieband 
+            für einen isotropen Kristall lässt sich durch die Gleichung 
+
+            \begin{equation}
+                \varepsilon(\vec{k}) = \varepsilon(0) + \frac{1}{2}\sum_{i=1}^3
+                \left(\frac{\partial \epsilon^2}{\partial k_i^2}\right)_{k=0}\cdot k_i^2 + \,
+                \mathcal{O}(k^3) = \varepsilon(0) + \frac{\hbar^2k^2}{2m^*} + \mathcal{O}(k^3)
+            \end{equation} 
+            beschreiben. Falls die Masse der Kristallelektronen als effektive Masse 
+
+            \begin{equation}
+                m_i^* = \frac{\hbar^2}{\left(\frac{\partial^2\varepsilon}{\partial k_i^2} \right)_{k=0}}
+            \end{equation}
+            angenommen wird, folgen die Kristallelektronen im approximierten Leitungsband 
+            den gleichen Gleichungen wie freie Elektronen, ohne dass das Kristallpotential 
+            extra berücksichtigt werden muss. Ebenso können die Gleichungen der klassischen Mechanik
+            auf die Teilchen angewendet werden, falls kleine elektrische oder magnetische 
+            Felder angelegt sind.
+            Dabei muss h\"aufig die Richtungsabh\"angigkeit von $m_i^*$ nicht explizit 
+            ber\"ucksichtigt werden, solange eine ausreichende Kristallsymmetrie in 
+            alle Richtungen vorhanden ist. Dies ist bei GaAs der Fall.
+
+        \subsection{Zirkulare Doppelbrechung}
+
+            Bei der zirkularen Doppelbrechung sorgt ein Festkörper dafür, dass Licht, welches 
+            ihn durchläuft, eine Rotation der Polarisation erfährt. Die einfallende linear polarisierte 
+            Welle wird als eine Überlagerung aus einer rechts- und einer links-zirkular polarisierten 
+            Welle betrachtet, die sich innerhalb des Festkörpers mit unterschiedlicher Phasengeschwindigkeit
+            fortbewegen. Der Rotationswinkel der Polarisationsebene wird durch
+
+            \begin{equation}
+                \theta = \frac{\symup{L}}2(k_{\symup{R}}-k_{\symup{L}}) = 
+                \frac{\symup{L}\omega}2
+                \left(\frac{1}{v_{\symup{Ph}_{\symup{R}}}}-\frac{1}{v_{\symup{Ph}_{\symup{L}}}}\right)
+                = \frac{\symup{L}\omega}{2\symup{c}}(\symup{n}_{\symup{R}}-\symup{n}_{\symup{L}})
+            \end{equation}
+
+            beschrieben, wobei es sich bei $L$ um die Länge des durchtretenen Materials handelt.
+            Die Doppelbrechung wird mikroskopisch betrachtet durch die 
+            Nebendiagonalelemente des Suszeptibilitätstensors verursacht. 
+            Die Suszeptibilität verknüpft die Polarisation mit dem elektrischen Feld über die 
+            Gleichung 
+
+            \begin{equation}
+                \vec{P}=\varepsilon_0\chi\vec{E}.
+            \end{equation}
+
+            Der Tensor doppelbrechender Materialien hat die Form
+
+            \begin{equation}
+                \begin{pmatrix*}[r]
+                    \chi_{xx} & i\chi_{xy} & 0 \\
+                    -i\chi_{xy} & \chi_{xx} & 0 \\
+                    0 & 0 & \chi_{zz}
+                \end{pmatrix*}.
+                \label{eqn:tensor}
+            \end{equation}
+
+            Dadurch lässt sich der Winkel der Faraday-Rotation durch das Nebendiagonalelement 
+            ausdrücken:
+
+            \begin{equation}
+                \theta \approx \frac{\symup{L}\omega}{2\symup{c}^2}v_{\symup{Ph}}\chi_{xy}.
+            \end{equation}
+
+
+        \subsection{Faraday-Effekt}
+
+            Beim Faraday-Effekt verändert ein Material, an welches ein magnetisches Feld 
+            in Strahlrichtung angelegt ist, die Polarisationsebene des durchtretenden Lichts. 
+            Auch bei Materialien, die grundsätzlich einen diagonalen Suszeptibilitätstensor besitzen,
+            treten durch das Magnetfeld Nebendiagonalelemente auf, die zu Doppelbrechung und somit 
+            letztendlich zum Faraday-Effekt führen. Der Tensor hat die Gestalt aus Gleichung \eqref{eqn:tensor}.
+
+            %\begin{equation}
+            %    \begin{pmatrix*}[r]
+            %        \chi_{xx} & i\chi_{xy} & 0\\
+            %        -i\chi_{xy} & \chi_{xx} & 0\\
+            %        0 & 0 & \chi_{zz}
+            %    \end{pmatrix*}.
+            %\end{equation}
+
+            Explizit lässt sich das Matrixelement als 
+
+            \begin{equation}
+                \chi_{xy} = \frac{N e_0^3 \omega B}
+                {\varepsilon_0\left(\left(-m\omega^2+K\right)^2-(e_0\omega B)^2\right)}
+            \end{equation}
+
+            darstellen, wobei $K$ eine Bindungskonstante des Elektrons ist und $N$ die Zahl der 
+            Ladungsträger pro Volumeneinheit darstellt. Durch die Kenntnis des Matrixelements 
+            kann der Winkel der Faraday-Rotation durch 
+
+            \begin{equation}
+                \theta = \frac{e_0^3}{2\varepsilon_0\symup{c}}\frac{\omega^2}
+                {\left(-m\omega^2 +K\right)^2-(e_0\omega B)^2}\frac{NBL}{n}
+            \end{equation}
+            ausgedrückt werden. Falls die Messfrequenz weit unter der Resonanzfrequenz 
+            gebundener Ladungsträger liegt, kann der Winkel als 
+
+            \begin{equation}
+                \theta \approx \frac{2\pi^2e_0^3\symup{c}}{\varepsilon_0}\frac1{m^2}
+                \frac1{\lambda^2\omega_0^4}\frac{NBL}n
+            \end{equation}
+
+            geschrieben werden. Für freie Elektronen oder gebundene Elektronen in der Schreibweise der 
+            effektiven Masse, d.h. f\"ur die quasifreien Elektronen
+            im Leitungsband,  geht die Resonanzfrequenz gegen 0.
+            Dies führt zu folgendem Ausdruck für den 
+            Faraday-Winkel:
+
+            \begin{equation}
+                \theta \approx \frac{e_0^3}{8\pi^2\varepsilon_0\symup{c}^3}\frac1{m^2}\lambda^2\frac{NBL}n.
+            \end{equation}
