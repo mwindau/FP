@@ -1,4 +1,73 @@
 \section{Theorie}
 \label{sec:Theorie}
 
-\cite{sample}
+Zum Verstehen eines Sagnac-Interferometers wird zunächst die benötigte grundlegende Theorie des Lichts, der Interferenz und der Polarisation erl\"autert. Im Anschluss wird
+auf die Bestimmung von Brechungsindizes in Glas und Luft eingeganen.
+
+\subsection{Licht, Interferenz und Polarisation}
+
+Es handelt sich bei Licht um elektromagnetische Wellen, weswegen sie im Falle von monochromatichem Licht g\"anzlich durch ein elektrisches Feld der Form
+\begin{align}
+    \vec{E} = \vec{E_0} \, \exp(i(\omega t - \vec{k}\vec{r}))
+\end{align}
+beschrieben werden k\"oennen. Dabei wird die Polarisation des Feldes durch $\vec{E_0}$ dargestellt.
+Durch die \"Uberlagerung von zwei Wellen $\vec{E_1}$ und $\vec{E_2}$ k\"onnen Interferenzeffekte enstehen.
+Eine Messbare Gr\"o\ss{}e f\"ur die \"Uberlagerung stellt dabei die Intensit\"at dar:
+\begin{align}
+    I_{\symup{Laser}} \approx \bigl< |\vec{E_1}+\vec{E_2}|^2 \bigr> = \vec{E_01}^2+\vec{E_02}^2 + 2\vec{E_01}\vec{E_02}\cos(\delta)\cos(\Delta \Phi)
+\end{align}
+Dabei steht $\delta$ f\"ur den Polarisationswinkel zwischen den beiden Feldervektoren und $\Delta \Phi$ f\"ur die Phasendifferenz zwischen den Feldern.
+Falls die Wellen senkrecht zueinander polarisiert sind ($\delta=\pi/2$) tritt kein Interferenzeffekt auf.
+Die Polarisation eines elektrischen Feldes kann mit einem Polarisationsfilter beeinflu\ss{}t werden, indem diese den Lichtanteil senkrecht zum eingestellten Filterwinkel rausfiltert.
+Durchquert ein Strahl einen Polarisationsfilter mit einem Filterwinkel von $\theta$, l"asst sich die Polarisation im Faktor $\vec{E_0}$ durch
+\begin{align}
+    E_0 = (E_x\vec{e_x}=E_y\vec{e_y})\,\left(\frac{\cos\theta}{\sin\theta}\right)
+\end{align}
+beschreiben. Werden die elektrischen Felder auf eine gemeinsame Polarisation gebracht ($\delta=0$), ergibt sich insgesamt f\"ur die Intensit\"at:
+\begin{align}
+    I \approx I_{\symup{Laser}}(1+2\cos\theta\sin\theta\cos(\Delta\Phi))
+\end{align}
+Die Intensit\"at wird maximal f\"ur konstruktive Interferenz, also einer Phasendifferenz von $0,2\pi...$ und minimal f\"ur destruktive Interferenz, also einer
+Phasendifferenz von $\pi,3\pi...$:
+\begin{align}
+    I_{\symup{max/min}} &= I_{\symup{Laser}}(1\pm 2\cos\theta\sin\theta)
+\end{align}
+Es l\"asst sich f\"ur Interferometer ein Kontrast, das hei\ss{}t eine "Sichtbarkeit" der Interferenz, berechnen:
+\begin{align}
+    K &= \frac{I_{\symup{max}} - I_{\symup{min}}}{I_{\symup{max}} + I_{\symup{min}}}\\
+      &= |\sin(2\theta)|
+    \label{eq:kontrast}
+\end{align}
+
+\subsection{Bestimmung von Brechungsindizes}
+
+Bei der Bestimmung der Brechungsindizes wird im Vorgehen zwischen Festk\"orpern und Gasen unterschieden.
+
+Propagiert einer der Lichtstrahlen durch ein Glas der L\"ange $T$, ensteht eine Phasendifferenz zwischen den Strahlen.
+Mittels dem Snelliusschen Brechunggesetz und einer Kleinwinkeln\"aherung kann die auftretende Phasendifferenz  wie
+folgt dargestellt werden:
+\begin{align}
+    \Delta \Phi = \frac{2\pi}{\lambda_{\symup{vac}}}T\left(\frac{n-1}{2n}\theta^2+\symcal{O}(\theta^4)\right)
+\end{align}
+Dabei steht $\lambda_{\symup{vac}}$ f\"ur die Wellenl\"ange des Lichts im Vakuum. Mit der Anzahl $M$ der Interferenzextrema und einem Faktor von 2, da beide Lichtstrahlen durch die Probe propagieren,
+l\"asst sich nun folgende Gleichung aufstellen:
+\begin{align}
+    M = \frac{2\Delta\Phi}{2\pi} \approx frac{T(n-1)}{2n\lambda_{\symup{vac}}}\theta^2
+\end{align}
+Da sich die Probe in beiden Lichtstrahlen mit einem jeweils anderen $\theta$ befindet, wird die Gleichung durch den linearen Term der Taylorreihe gen\"ahert:
+\begin{align}
+    M \approx \frac{T(n-1)}{n\lambda_{\symup{vac}}}(2\theta_0\Delta\theta)
+\end{align}
+
+Bei der Bestimmung des Brechungsindizes von Luft, f\"uhrt man eine Gaszelle in einen der Strahleng\"ange ein. Propagiert der Lichtstrahl nun durch die Gaszelle ensteht eine Phasendifferenz zwischen
+den Strahlen, die unteranderem abh\"angig vom Unterschied zwischen
+den Brechungsindizes der Luft in und au\ss{}erhalb der Gaszelle ist. Analog zum Vorgehen beim Glas, wird wieder die Anzahl $M$ der Interferenzextrema betrachtet:
+\begin{align}
+    M = \frac{\Delta\Phi}{2\pi} = \frac{\Delta nL}{\lambda_{\symup{vac}}}
+\end{align}
+Dabei steht $L$ f\"ur die L\"ange der Gaszelle.
+Im Gegensatz zum Brechungsindex im Glas, ist der Brechungsindex im Gas stark vom Druck $p$ abh\"angig. Mit dem Lorentz-Lorenz-Gesetz l\"asst sich eine N\"aherung \cite{lorentz} f\"ur den
+Brechungsindex vom Gas ermitteln:
+\begin{align}
+    n \approx \sqrt{1+\frac{3Ap}{RT}}
+\end{align}
