@@ -1,0 +1,130 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{anleitung}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsanleitung zu V64-Interferometrie}
+      \field{year}{2019}
+    \endentry
+    \entry{rii}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=df8dc627cbd985fcef0ace169382f375}{%
+           family={Polyanskiy},
+           familyi={P\bibinitperiod},
+           given={Mikhail\bibnamedelima N.},
+           giveni={M\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{df8dc627cbd985fcef0ace169382f375}
+      \strng{fullhash}{df8dc627cbd985fcef0ace169382f375}
+      \strng{bibnamehash}{df8dc627cbd985fcef0ace169382f375}
+      \strng{authorbibnamehash}{df8dc627cbd985fcef0ace169382f375}
+      \strng{authornamehash}{df8dc627cbd985fcef0ace169382f375}
+      \strng{authorfullhash}{df8dc627cbd985fcef0ace169382f375}
+      \field{sortinit}{P}
+      \field{sortinithash}{bb5b15f2db90f7aef79bb9e83defefcb}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://refractiveindex.info}}
+      \field{title}{Refractive index database}
+    \endentry
+    \entry{refr_index_air}{online}{}
+      \name{author}{2}{}{%
+        {{hash=9a52faa05d09ddaa8bb998e71c55cc2b}{%
+           family={Stone},
+           familyi={S\bibinitperiod},
+           given={Jack\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=fec52fcdce1e185b9e3b758029b82eab}{%
+           family={Zimmerman},
+           familyi={Z\bibinitperiod},
+           given={Jay\bibnamedelima H.},
+           giveni={J\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \strng{namehash}{c846d0def573910fd76902982c73a527}
+      \strng{fullhash}{c846d0def573910fd76902982c73a527}
+      \strng{bibnamehash}{c846d0def573910fd76902982c73a527}
+      \strng{authorbibnamehash}{c846d0def573910fd76902982c73a527}
+      \strng{authornamehash}{c846d0def573910fd76902982c73a527}
+      \strng{authorfullhash}{c846d0def573910fd76902982c73a527}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Index of Refraction of Air}
+      \verb{urlraw}
+      \verb https://emtoolbox.nist.gov/Wavelength/Ciddor.asp
+      \endverb
+      \verb{url}
+      \verb https://emtoolbox.nist.gov/Wavelength/Ciddor.asp
+      \endverb
+    \endentry
+    \entry{lorentz}{online}{}
+      \name{author}{1}{}{%
+        {{hash=88183b946cc5f0e8c96b2e66e1c74a7e}{%
+           family={Unknown},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{fullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{bibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorbibnamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authornamehash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \strng{authorfullhash}{88183b946cc5f0e8c96b2e66e1c74a7e}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{28}
+      \field{month}{9}
+      \field{title}{Lorentz–Lorenz equation}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2019}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Clausius%E2%80%93Mossotti_relation
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Clausius%E2%80%93Mossotti_relation
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

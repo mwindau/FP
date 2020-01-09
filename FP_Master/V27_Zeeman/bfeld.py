@@ -15,4 +15,3 @@ for i in range(18):
 
 plt.plot(a, b_mittel, 'b.')
 plt.show()
-
