@@ -1,0 +1,29 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Schaltungen mit Operationsverstärkern}{4}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Invertierender-Linearverstärker}{4}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Umkehr-Integrator}{6}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Invertierender-Differenzierer}{6}{subsubsection.2.1.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Nicht-Invertierender-Schmitt-Trigger}{7}{subsubsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.5}Signalgenerator}{7}{subsubsection.2.1.5}%
+\contentsline {subsubsection}{\numberline {2.1.6}Variierende-Amplituden}{8}{subsubsection.2.1.6}%
+\contentsline {section}{\numberline {3}Durchführung}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Invertierender-Linearverstärker}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Integrator und Differentiator}{9}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Schmitt-Trigger}{9}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Signalgenerator}{9}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}Variierende Amplitude}{9}{subsection.3.5}%
+\contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Invertierender Linearverstärker}{9}{subsection.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.1}Messwerte}{9}{subsubsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.2}Frequenzabhängigkeit der Ausgangsspannung}{9}{subsubsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.3}Frequenzabhängigkeit der Phase zwischen Ein- und Ausgangsspannung}{15}{subsubsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.2}Umkehrintegrator}{16}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Differenzierer}{17}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Nicht-Invertierender Schmitt-Trigger}{17}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Signalgenerator}{21}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.6}Variierende Amplituden}{21}{subsection.4.6}%
+\contentsline {section}{\numberline {5}Diskussion}{22}{section.5}%
+\contentsline {section}{\nonumberline Literatur}{23}{section*.27}%

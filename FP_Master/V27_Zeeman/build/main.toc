@@ -1,0 +1,25 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}%
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Magnetisches Moment des Elektrons}{3}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Kopplungen der Drehimpulse und magnetischen Momente mehrerer Elektronen}{3}{subsection.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.1}LS-Kopplung}{3}{subsubsection.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2}jj-Kopplung}{4}{subsubsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.3}Energieniveaus im Magnetfeld}{5}{subsection.2.3}%
+\contentsline {subsubsection}{\numberline {2.3.1}Aufspaltung der Energie durch ein Magnetfeld}{5}{subsubsection.2.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.2}Auswahlregeln}{5}{subsubsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.4}Zeeman-Effekt}{5}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Normaler Zeeman-Effekt}{5}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Anormaler Zeeman-Effekt}{6}{subsubsection.2.4.2}%
+\contentsline {section}{\numberline {3}Aufbau}{7}{section.3}%
+\contentsline {section}{\numberline {4}Durchführung}{8}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Eichung des Magnetfeldes}{8}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Justage der optischen Elemente}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Vermessung der roten Cadmium-Linie}{9}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Vermessung der blauen Cadmium-Linie}{9}{subsection.4.4}%
+\contentsline {section}{\numberline {5}Auswertung}{9}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Magnetfeldmessung}{9}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Spektrallinien}{10}{subsection.5.2}%
+\contentsline {section}{\numberline {6}Diskussion}{16}{section.6}%
+\contentsline {section}{\nonumberline Literatur}{16}{section*.17}%

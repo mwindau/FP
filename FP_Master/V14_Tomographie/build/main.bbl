@@ -1,0 +1,112 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{blei}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=eda2883fcd2592b58151d6e2dd29403c}{%
+           family={al},
+           familyi={a\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.\bibnamedelimi Helmut\bibnamedelima Winter},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinitperiod\bibinitdelim H\bibinitperiod\bibinitdelim W\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{eda2883fcd2592b58151d6e2dd29403c}
+      \strng{fullhash}{eda2883fcd2592b58151d6e2dd29403c}
+      \strng{bibnamehash}{eda2883fcd2592b58151d6e2dd29403c}
+      \strng{authorbibnamehash}{eda2883fcd2592b58151d6e2dd29403c}
+      \strng{authornamehash}{eda2883fcd2592b58151d6e2dd29403c}
+      \strng{authorfullhash}{eda2883fcd2592b58151d6e2dd29403c}
+      \field{sortinit}{a}
+      \field{sortinithash}{a3dcedd53b04d1adfd5ac303ecd5e6fa}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Absorption von Strahlung}
+      \verb{urlraw}
+      \verb http://pgd5.physik.hu-berlin.de/pgd/absorpt.htm
+      \endverb
+      \verb{url}
+      \verb http://pgd5.physik.hu-berlin.de/pgd/absorpt.htm
+      \endverb
+    \endentry
+    \entry{tomneu}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsanleitung zu Versuch Nr.14 Tomographie mittels Gammastrahlung}
+      \field{year}{2020}
+    \endentry
+    \entry{wuerf}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=bad59183470fb48b04c88b3d998aeb41}{%
+           family={Luckey},
+           familyi={L\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{fullhash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{bibnamehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{authorbibnamehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{authornamehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{authorfullhash}{bad59183470fb48b04c88b3d998aeb41}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{tikz-Projektionen.pdf}
+      \verb{urlraw}
+      \verb https://github.com/LuckyJosh/PhysikFP2015/blob/master/01_TomographieGamma\%5BX\%5D/Grafiken/Tikz/tikz-Projektionen.pdf
+      \endverb
+      \verb{url}
+      \verb https://github.com/LuckyJosh/PhysikFP2015/blob/master/01_TomographieGamma%5C%5BX%5C%5D/Grafiken/Tikz/tikz-Projektionen.pdf
+      \endverb
+    \endentry
+    \entry{theorie}{article}{}
+      \field{sortinit}{N}
+      \field{sortinithash}{98cf339a479c0454fe09153a08675a15}
+      \field{labeltitlesource}{title}
+      \field{title}{NIST: Element/Compound/Mixture Selection}
+      \verb{urlraw}
+      \verb https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html
+      \endverb
+      \verb{url}
+      \verb https://physics.nist.gov/PhysRefData/Xcom/html/xcom1.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,112 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{anneu}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Versuchsanleitung zu Versuch Nr.27 Zeeman-Effekt}
+      \field{year}{2019}
+    \endentry
+    \entry{scipy}{software}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=4b3d26f886661aa723985bcfd835ba18}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d500f4849030f34359cdb3e1513acf83}{%
+           family={Oliphant},
+           familyi={O\bibinitperiod},
+           given={Travis\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{fullhash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{bibnamehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{authorbibnamehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{authornamehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{authorfullhash}{c2d4b138ebed3e173fcb667b68477029}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{SciPy}: Open source scientific tools for {Python}}
+      \field{version}{0.16.0}
+      \verb{urlraw}
+      \verb http://www.scipy.org/
+      \endverb
+      \verb{url}
+      \verb http://www.scipy.org/
+      \endverb
+    \endentry
+    \entry{josh}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=bad59183470fb48b04c88b3d998aeb41}{%
+           family={Luckey},
+           familyi={L\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{fullhash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{bibnamehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{authorbibnamehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{authornamehash}{bad59183470fb48b04c88b3d998aeb41}
+      \strng{authorfullhash}{bad59183470fb48b04c88b3d998aeb41}
+      \field{sortinit}{L}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Der Zeeman-Effekt}
+      \field{year}{2019}
+      \verb{urlraw}
+      \verb https://github.com/LuckyJosh/PhysikFP2015
+      \endverb
+      \verb{url}
+      \verb https://github.com/LuckyJosh/PhysikFP2015
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

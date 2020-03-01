@@ -1,0 +1,21 @@
+[0] Config.pm:304> INFO - This is Biber 2.13
+[0] Config.pm:307> INFO - Logfile is 'build/main.blg'
+[24] biber:315> INFO - === So Mär  1, 2020, 11:34:19
+[41] Biber.pm:375> INFO - Reading 'build/main.bcf'
+[108] Biber.pm:905> INFO - Found 4 citekeys in bib section 0
+[122] Biber.pm:4196> INFO - Processing section 0
+[123] Utils.pm:75> INFO - Globbing data source 'lit.bib'
+[123] Utils.pm:91> INFO - Globbed data source 'lit.bib' to lit.bib
+[123] Utils.pm:75> INFO - Globbing data source 'programme.bib'
+[123] Utils.pm:91> INFO - Globbed data source 'programme.bib' to programme.bib
+[131] Biber.pm:4373> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[140] bibtex.pm:1462> INFO - LaTeX decoding ...
+[146] bibtex.pm:1281> INFO - Found BibTeX data source 'lit.bib'
+[158] Utils.pm:300> WARN - year field '2001--' in entry 'scipy' is not an integer - this will probably not sort properly.
+[178] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[179] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[179] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[179] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
+[186] bbl.pm:648> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[188] bbl.pm:751> INFO - Output to build/main.bbl
+[188] Biber.pm:110> INFO - WARNINGS: 1
